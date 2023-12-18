@@ -7,6 +7,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "navi";   /*Can be any text*/
+  src: local("Lato-Bold"),
+    url("./fonts/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";   /*Can be any text*/
+  src: local("Inter"),
+    url("./fonts/Inter.ttf") format("truetype");
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

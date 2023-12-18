@@ -1,21 +1,30 @@
-import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Carousel from "./components/Carousel";
+import Home from "./Home";
+import Carousel  from "./components/Carousel";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
-import "./App.css";
+import Layout from "./Layout";
+import NoPage from "./NoPage";
+import Careers from "./components/Careers";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Header />
-      <Carousel />
-      <About />
-      <Products />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Products" element={<Products />} />
+          <Route path="/Careers" element={<Careers />} />
+          <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
