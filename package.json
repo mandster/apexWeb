@@ -13,15 +13,18 @@
     "@testing-library/user-event": "^13.5.0",
     "fs": "^0.0.1-security",
     "git": "^0.1.5",
+    "loader": "^2.1.1",
+    "lodash": "^4.17.21",
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^3.0.1",
     "react-slick": "^0.29.0",
+    "scripts": "^0.1.0",
     "slick-carousel": "^1.8.1",
     "util": "^0.12.5",
-    "utils": "^0.3.1",
+    "utils": "^0.2.2",
     "web-vitals": "^2.1.4",
     "webfontloader": "^1.6.28"
   },
@@ -35,6 +38,20 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "rules": {
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off"
+    },
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
     ]
   },
   "browserslist": {
@@ -51,10 +68,10 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
-  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2"
+  }
 }

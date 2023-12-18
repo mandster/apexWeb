@@ -1,19 +1,32 @@
 import React from "react";
 import logo from "../image/LOGO.jpg";
 import "../styles.css";
+import SocialIcons from "./SocialIcons";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-  <>  <div className="row-container">
-      <Link to="/Careers" className="link">Careers</Link>
-      <Link to="/Contact" className="link">Contact us</Link>
-      <Link to="#" className="link">Link 3</Link>
-    </div>
-    <div className="header" >
-    <Link to="/">   <div className="logo-container">
-       <img src={logo} alt="APEX ELECTRICALS" className="main-logo" />
-        <span className="logo-text"> APEX ELECTRICALS</span></div></Link>
+    <>
+      {" "}
+      <div className="row-container">
+        <Link to="/Careers" className="link">
+          Careers
+        </Link>
+        <Link to="/Contact" className="link">
+          Contact us
+        </Link>
+        <Link to="#" className="link">
+          Link 3
+        </Link>
+      </div>
+      <div className="header">
+        <Link to="/">
+          {" "}
+          <div className="logo-container">
+            <img src={logo} alt="APEX ELECTRICALS" className="main-logo" />
+            <span className="logo-text"> APEX ELECTRICALS</span>
+          </div>
+        </Link>
         <nav>
           <Link to="/">Home</Link>
           <Link to="/About">About</Link>
@@ -27,11 +40,11 @@ const Header = () => {
           </div>
           <Link to="/Contact">Contact Us</Link>
         </nav>
-        <div>Facebook Instagram</div>
+        <div>< SocialIcons /></div>
       </div>
-      <div className="nav-bottom">
-      </div></>
-);
+      <div className="nav-bottom"></div>
+    </>
+  );
 };
 
 export default Header;
