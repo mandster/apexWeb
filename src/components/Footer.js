@@ -1,14 +1,16 @@
 import React from "react";
-import logo from "../image/LOGO.jpg"
+import logo from "../image/LOGO.jpg";
 
-import "../styles.css"
+import "../styles.css";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="logo-column">
-        <img src={logo} alt="APEX ELECTRICALS Logo" className="main-logo" />
-      </div>
+      <Link to="/">
+        <div className="logo-container">
+          <img src={logo} alt="APEX ELECTRICALS" className="main-logo" />
+        </div>
+      </Link>
       <div className="contact-column">{/* Contact information */}</div>
       <div className="quick-links-column">{/* Quick links */}</div>
       <div className="follow-us-column">
