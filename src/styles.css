@@ -1,86 +1,85 @@
 .main-logo {
-    height: auto;
-    width: 50px;
-  }
-
-  .logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: Tahoma;
-    text-decoration: none;
-    vertical-align:top;
-
+  height: auto;
+  text-decoration: none;
+  width: 40%;
 }
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    font-family: Inter; /* Use a popular font family */
-  }
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Tahoma;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  font-family: Inter; /* Use a popular font family */
+}
 
 .carousel {
-    width: 90%;
+  width: 90%;
 }
 .row-container {
-    background-color: rgb(246, 246, 246);
-    display: flex;
-    justify-content: flex-end; /* Align to the right */
-    padding: 10px; /* Adjust padding as needed */
-  }
-  
-  .link {
-    color: rgb(88, 88, 88);
-    font-size: 12px;
-    text-decoration: none;
-    margin-right: 10px; /* Adjust margin between links as needed */
-  }
-  
-  .link:last-child {
-    margin-right: 0; /* Remove margin for the last link */
-  }
-  
-  .logo-container {
-    margin-right: 20px;
-  }
-  nav {
-    display: flex;
-  }
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  padding: 10px; /* Adjust padding as needed */
+}
 
-  .nav-bottom{
-    border-bottom: 1px solid rgb(220, 219, 219);
-  }
-  
-  nav a {
-    margin-right: 10px;
-    text-decoration: none;
-    color: #333;
-    font-family: Inter;
-    font-weight:500;
-    font-size: 16px;
-    padding: 10px;
-  }
-  
-  /* Updated styles for dropdown */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    top:11px;;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%; /* Align the top of the dropdown with the bottom of the parent */
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
+.link {
+  color: rgb(88, 88, 88);
+  font-size: 12px;
+  text-decoration: none;
+  margin-right: 10px; /* Adjust margin between links as needed */
+}
+
+.link:last-child {
+  margin-right: 0; /* Remove margin for the last link */
+}
+
+.logo-container {
+  margin-right: 20px;
+}
+nav {
+  display: flex;
+}
+
+.nav-bottom {
+  border-bottom: 1px solid rgb(220, 219, 219);
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Updated styles for dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  top: 11px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Align the top of the dropdown with the bottom of the parent */
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../image/LOGO.jpg";
+import logo from "../image/Apex_logo_23.png";
 import "../styles.css";
 import SocialIcons from "./SocialIcons";
 import { Link } from "react-router-dom";
@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      {" "}
       <div className="row-container">
         <Link to="/Careers" className="link">
           Careers
@@ -21,10 +20,8 @@ const Header = () => {
       </div>
       <div className="header">
         <Link to="/">
-          {" "}
           <div className="logo-container">
             <img src={logo} alt="APEX ELECTRICALS" className="main-logo" />
-            <span className="logo-text"> APEX ELECTRICALS</span>
           </div>
         </Link>
         <nav>
@@ -40,7 +37,9 @@ const Header = () => {
           </div>
           <Link to="/Contact">Contact Us</Link>
         </nav>
-        <div>< SocialIcons /></div>
+        <div>
+          <SocialIcons />
+        </div>
       </div>
       <div className="nav-bottom"></div>
     </>
