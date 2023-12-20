@@ -11,6 +11,9 @@ import Footer from "./components/Footer";
 import Layout from "./Layout";
 import NoPage from "./NoPage";
 import Careers from "./components/Careers";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+;
+
 
 export default function App() {
   return (
