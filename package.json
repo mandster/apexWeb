@@ -48,16 +48,9 @@
     "rules": {
       "react/jsx-uses-react": "off",
       "react/react-in-jsx-scope": "off",
-      "react/jsx-filename-extension": [
-        1,
-        {
-          "extensions": [
-            ".js",
-            ".jsx"
-          ]
-        }
-      ]
-    },
+   "react/react-in-jsx-scope": "off",
+  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+ },
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [
       1,
@@ -84,7 +77,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "author": "",
-  "license": "ISC",
+  "license": "ISC", 
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-config-google": "^0.14.0"
