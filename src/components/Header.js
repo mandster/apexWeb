@@ -22,7 +22,7 @@ const Header = () => {
             <img src={logo} alt="APEX ELECTRICALS" className="main-logo" />
           </div>
         </Link>
-       < Nav />
+        <Nav />
       </div>
       <div className="nav-bottom"></div>
     </>

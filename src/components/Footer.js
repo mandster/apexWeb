@@ -9,16 +9,31 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        <Link to="/">
-          <div className="logo-container">
-            <img src={logo} alt="APEX ELECTRICALS" className="main-logo" />
-          </div>
-        </Link>
-        <div className="contact-column">
+        <div className="logo-container">
+          <Link to="/">
+            <img src={logo} alt="APEX ELECTRICALS" className="footer-logo" />
+          </Link>
+        </div>
+        <div className="quick-links-column">
+          <h2>Quick links</h2>
+          <Link to="/components/products/Starters">Motor Starters</Link>{" "}
+          <br></br>
+          <Link to="/components/products/ControlSwitches">
+            L.T. Control Switches
+          </Link>
+          <br></br>
+          <Link to="/components/products/SubmersiblePanels">
+            Submersible Panels
+          </Link>
+          <br></br>
+          <Link to="/components/products/Accessories">Accessories</Link>
+        </div>
+        <div className="follow-us-column">
           <ContactCard />
         </div>
-        <div className="quick-links-column"></div>
+
         <div className="follow-us-column">
+          <h2>Visit us on</h2>
           <SocialIcons />
         </div>
       </div>
