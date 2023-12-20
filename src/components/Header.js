@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../image/Apex_logo_23.png";
 import "../styles.css";
 import SocialIcons from "./SocialIcons";
+import Nav from "./Nav";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -14,9 +15,6 @@ const Header = () => {
         <Link to="/Contact" className="link">
           Contact us
         </Link>
-        <Link to="#" className="link">
-          Link 3
-        </Link>
       </div>
       <div className="header">
         <Link to="/">
@@ -24,22 +22,7 @@ const Header = () => {
             <img src={logo} alt="APEX ELECTRICALS" className="main-logo" />
           </div>
         </Link>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/About">About</Link>
-          <div className="dropdown">
-            <Link to="/Products">Products</Link>
-            <div className="dropdown-content">
-              <Link to="/components/products/category1">Category 1</Link>
-              <Link to="/components/products/category2">Category 2</Link>
-              <Link to="/components/products/category3">Category 3</Link>
-            </div>
-          </div>
-          <Link to="/Contact">Contact Us</Link>
-        </nav>
-        <div>
-          <SocialIcons />
-        </div>
+       < Nav />
       </div>
       <div className="nav-bottom"></div>
     </>

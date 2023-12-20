@@ -4,11 +4,11 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slide1 from "../image/slide1.jpg";
-import slide2 from "../image/slide2.jpg";
-import slide3 from "../image/slide3.jpg";
-import slide4 from "../image/slide4.jpg";
-import slide5 from "../image/slide5.jpg";
+import slide2 from "../image/starters.jpg";
+import slide3 from "../image/controlswitches.jpg";
+import slide4 from "../image/submersiblepanels.jpg";
+import slide5 from "../image/contactors.jpg";
+import slide1 from "../image/allproducts.jpg";
 
 const Carousel = () => {
   const settings = {

@@ -12,11 +12,15 @@
   vertical-align: top;
 }
 
+.Home {
+  width: 100%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   font-family: Inter; /* Use a popular font family */
 }
@@ -24,6 +28,13 @@
 .carousel {
   width: 90%;
 }
+/* Media query for screens with a maximum width of 768 pixels (adjust as needed) */
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%; /* Each card takes up 100% of the product row width on smaller screens */
+  }
+}
+
 .row-container {
   background-color: rgb(246, 246, 246);
   display: flex;
@@ -117,6 +128,7 @@ nav a {
 }
 
 .company-description {
+  font-size: 16px;
   width: 70%;
 }
 
@@ -135,11 +147,69 @@ nav a {
 }
 
 .description {
-  font-size: 1.2rem;
+  padding-left: 20px;
+  padding-right: 20px;
   line-height: 1.6;
-  color: #444;
+  color: #313131;
   margin-bottom: 15px;
+  font-size: 22px;
+
 }
+
+.thumb-description {
+  width: 100%;
+color: #313131;
+font-size: 18px;
+font-style: italic;
+padding: 0%;
+}
+
+.thumb-name {
+font-style: normal;
+font-weight: bold;
+}
+
+.product-row {
+  padding: 10px;;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media query for screens with a maximum width of 768 pixels (adjust as needed) */
+@media (max-width: 768px) {
+  .product-row {
+    width: 90%; /* Each card takes up 100% of the product row width on smaller screens */
+  }
+}
+
+.product-card {
+  width: 23%; /* Each card takes up 23% of the product row width */
+  text-align: center;
+  text-decoration: none;
+  color: #333; /* Adjust text color as needed */
+}
+
+
+
+.thumbnail {
+  width: 100%;
+  max-height: 200px; /* Adjust max height as needed */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.address, .contact-details {
+  margin-top: 15px;
+}
+
 
 .dropdown:hover .dropdown-content {
   display: block;
