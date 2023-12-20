@@ -153,24 +153,23 @@ nav a {
   color: #313131;
   margin-bottom: 15px;
   font-size: 22px;
-
 }
 
 .thumb-description {
   width: 100%;
-color: #313131;
-font-size: 18px;
-font-style: italic;
-padding: 0%;
+  color: #313131;
+  font-size: 18px;
+  font-style: italic;
+  padding: 0%;
 }
 
 .thumb-name {
-font-style: normal;
-font-weight: bold;
+  font-style: normal;
+  font-weight: bold;
 }
 
 .product-row {
-  padding: 10px;;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -189,8 +188,6 @@ font-weight: bold;
   color: #333; /* Adjust text color as needed */
 }
 
-
-
 .thumbnail {
   width: 100%;
   max-height: 200px; /* Adjust max height as needed */
@@ -206,11 +203,61 @@ font-weight: bold;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.address, .contact-details {
+.address,
+.contact-details {
   margin-top: 15px;
 }
-
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* Add this to your CSS file */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e0e0;
+  color: #4b4a4a;
+  padding: 20px;
+}
+
+.footer-bed {
+  justify-content: space-between;
+  background-color: #575656;
+  color: #ececec;
+  padding: 2px;
+}
+
+.logo-container {
+  flex: 1; /* Takes up 1 part of the available space */
+}
+
+.contact-column,
+.quick-links-column,
+.follow-us-column {
+  flex: 1; /* Each column takes up 1 part of the available space */
+}
+
+.main-logo {
+  width: 100%;
+  max-width: 150px; /* Adjust the size as needed */
+}
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  font-style: bold;
+}
+
+.small-text {
+  font-size: 10px;
+}
+
+.medium-text {
+  font-size: 14px;
+}
+/* Add styling for ContactCard, Quick Links, and SocialIcons components as needed */

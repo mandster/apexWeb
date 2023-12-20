@@ -1,23 +1,31 @@
 import React from "react";
 import logo from "../image/Apex_logo_23.png";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 import "../styles.css";
-import Contact from "./Contact";
+import ContactCard from "./ContactCard";
+import SocialIcons from "./SocialIcons";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <Link to="/">
-        <div className="logo-container">
-          <img src={logo} alt="APEX ELECTRICALS" className="main-logo" />
+    <>
+      <div className="footer">
+        <Link to="/">
+          <div className="logo-container">
+            <img src={logo} alt="APEX ELECTRICALS" className="main-logo" />
+          </div>
+        </Link>
+        <div className="contact-column">
+          <ContactCard />
         </div>
-      </Link>
-      <div className="contact-column">< Contact /></div>
-      <div className="quick-links-column">{/* Quick links */}</div>
-      <div className="follow-us-column">
-        {/* Social media links or other ways to follow */}
+        <div className="quick-links-column"></div>
+        <div className="follow-us-column">
+          <SocialIcons />
+        </div>
       </div>
-    </div>
+      <div className="centered-text medium-text footer-bed">
+        Copyright @2023 Apex Electricals
+      </div>
+    </>
   );
 };
 
