@@ -26,7 +26,7 @@
 }
 
 .carousel {
-  width: 90%;
+  width: 80%;
 }
 /* Media query for screens with a maximum width of 768 pixels (adjust as needed) */
 @media (max-width: 768px) {
@@ -200,12 +200,24 @@ nav a {
 }
 
 .contact-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2cqi;
+  padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  align-items: center;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+
+.contact-column {
+  flex-basis: calc(
+    50% - 20px
+  ); /* Adjust as needed, considering the padding and space between columns */
+  margin: 10px;
 }
 
 .address,
@@ -222,7 +234,6 @@ nav a {
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #e0e0e0;
   color: #4b4a4a;
   padding: 20px;
@@ -245,11 +256,25 @@ nav a {
   flex: 1; /* Each column takes up 1 part of the available space */
 }
 
-.main-logo {
-  width: 100%;
-  max-width: 150px; /* Adjust the size as needed */
+.quick-links-column a:link {
+  color: #313131;
+  text-decoration: none;
 }
 
+.quick-links-column {
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.main-logo {
+  width: 25%;
+  max-width: 25%; /* Adjust the size as needed */
+}
+
+.footer-logo {
+  width: 75%;
+  max-width: 75%; /* Adjust the size as needed */
+}
 .italics {
   font-style: italic;
 }
@@ -265,4 +290,49 @@ nav a {
 .medium-text {
   font-size: 14px;
 }
+.about-us {
+  /* Add your main content styles */
+}
+
+/* Hero Section Styles */
+.hero {
+  background-color: #f0f0f0;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Content Container Styles */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Styles (Adjust as needed) */
+.about-apex,
+.background-insight,
+.unwavering-resolve,
+.commitment-excellence,
+.our-mission,
+.our-solution,
+.apex-electricals,
+.the-facts {
+  padding: 10px 0;
+}
+
+.content-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
 /* Add styling for ContactCard, Quick Links, and SocialIcons components as needed */
