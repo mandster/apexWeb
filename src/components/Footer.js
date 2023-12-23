@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../image/Apex_logo_23.png";
 import { Link } from "react-router-dom";
 import "../styles.css";

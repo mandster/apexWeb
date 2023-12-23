@@ -1,22 +1,18 @@
-import React from "react";
-import Footer from "./Footer";
-import Header from "./Header";
 
 const About = () => {
   return (
     <>
-      <Header />
-      <main class="about-us">
-        <section class="hero">
-          <div class="hero-content">
+      <main className="about-us">
+        <section className="hero">
+          <div className="hero-content">
             <h1>Welcome to Apex Electricals</h1>
             <p>Your Leading Partner in Electrical Solutions</p>
           </div>
         </section>
 
-        <section class="about-apex">
-          <div class="content-container">
-            <div class="about-apex-content">
+        <section className="about-apex">
+          <div className="content-container">
+            <div className="about-apex-content">
               <h2>Electrical Solutions Engineered for You</h2>
               <p>
                 For over 45 years, Apex has been the driving force behind
@@ -43,11 +39,11 @@ const About = () => {
           </div>
         </section>
 
-        <section class="background-insight">
-          <div class="content-container">
+        <section className="background-insight">
+          <div className="content-container">
             <h2>Background Insight</h2>
             <p>
-              In the 1970s, the "Green Revolution" in India fueled the demand
+              In the 1970s, the &quot;Green Revolution&ldquo; in India fueled the demand
               for Motor Starters. Faced with challenges like high prices and
               lengthy lead times for imported starters, the founders of Apex
               Electricals seized the opportunity to provide cost-effective and
@@ -57,8 +53,8 @@ const About = () => {
           </div>
         </section>
 
-        <section class="unwavering-resolve">
-          <div class="content-container">
+        <section className="unwavering-resolve">
+          <div className="content-container">
             <h2>Our Unwavering Resolve</h2>
             <p>
               Since our inception, we have painstakingly checked every piece of
@@ -70,11 +66,11 @@ const About = () => {
           </div>
         </section>
 
-        <section class="commitment-excellence">
-          <div class="content-container">
+        <section className="commitment-excellence">
+          <div className="content-container">
             <h2>Commitment to Excellence</h2>
             <p>
-              The love and appreciation we've received over the years drive our
+              The love and appreciation we have received over the years drive our
               commitment to continual improvement, innovation, the introduction
               of new products, global expansion, and significant contributions
               to society.
@@ -82,8 +78,8 @@ const About = () => {
           </div>
         </section>
 
-        <section class="our-mission">
-          <div class="content-container">
+        <section className="our-mission">
+          <div className="content-container">
             <h2>Our Mission</h2>
             <p>
               We are on a mission to provide innovative, reliable, and efficient
@@ -93,10 +89,10 @@ const About = () => {
           </div>
         </section>
 
-        <section class="apex-electricals">
-          <div class="content-container">
+        <section className="apex-electricals">
+          <div className="content-container">
             <h2>Apex Electricals</h2>
-            <p>"Power up your life with innovative electrical solutions!"</p>
+            <p>&quot;Power up your life with innovative electrical solutions!&ldquo;</p>
             <p>
               At Apex Electricals, we aspire to be a global leader in innovative
               electrical solutions, fostering progress and sustainability across
@@ -107,12 +103,12 @@ const About = () => {
           </div>
         </section>
 
-        <section class="the-facts">
-          <div class="content-container">
+        <section className="the-facts">
+          <div className="content-container">
             <h2>The Facts</h2>
             <ul>
               <li>
-                <strong>Using Innovation to Deliver Industry's Best</strong>
+                <strong>Using Innovation to Deliver Industry&quot;s Best</strong>
               </li>
               <li>
                 <strong>Customer-Centric:</strong> Focused on meeting the needs
@@ -134,8 +130,6 @@ const About = () => {
           </div>
         </section>
       </main>
-
-      <Footer />
     </>
   );
 };

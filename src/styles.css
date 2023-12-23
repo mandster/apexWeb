@@ -11,20 +11,30 @@
   width: 100%;
 }
 
+.btn-nav {
+  border: 1px  solid #313131;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   margin: 0 auto;
   font-family: Inter; /* Use a popular font family */
 }
 
-.carousel {
-  width: 80%;
-}
+
 /* Media query for screens with a maximum width of 768 pixels (adjust as needed) */
 @media (max-width: 768px) {
+  .h-content {
+    margin-left: 0px;
+  }
+  .footer {
+    visibility:hidden ;
+  }
+  .logo-container {
+    margin-right: 0;
+  }
   .carousel {
     width: 100%; /* Each card takes up 100% of the product row width on smaller screens */
   }
@@ -171,8 +181,8 @@ nav a {
 .product-row {
   padding: 10px;
   display: flex;
-  justify-content: space-between;
-}
+  flex-wrap: wrap;
+  justify-content: space-between;}
 
 /* Media query for screens with a maximum width of 768 pixels (adjust as needed) */
 @media (max-width: 768px) {
@@ -182,18 +192,39 @@ nav a {
 }
 
 .product-card {
-  width: 23%; /* Each card takes up 23% of the product row width */
+  flex: 1 0 calc(33.33% - 20px); /* 33.33% width with some margin */
   text-align: center;
   text-decoration: none;
+  margin: 10px;
+  padding: 10px;
   color: #333; /* Adjust text color as needed */
 }
 
 .thumbnail {
+
+  max-height: 250px; /* Adjust max height as needed */
   width: 100%;
-  max-height: 200px; /* Adjust max height as needed */
+  height: auto;
   object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border: 1px solid rgb(192, 191, 191);
+}
+.row::after {
+  content: "";
+  flex: auto;
 }
 
+/* Add media query for smaller screens if needed */
+@media (max-width: 768px) {
+  .product-card {
+    flex: 1 0 calc(90% - 20px); /* 50% width with some margin for smaller screens */
+  }
+}
+
+.h-center {
+  margin-left: 10%;
+  align-items: center;
+  align-content: center;
+}
 .contact-container {
   display: flex;
   flex-wrap: wrap;
@@ -262,8 +293,8 @@ nav a {
 }
 
 .main-logo {
-  width: 25%;
-  max-width: 25%; /* Adjust the size as needed */
+  width: 40%;
+  max-width: 40%; /* Adjust the size as needed */
 }
 
 .footer-logo {
@@ -329,5 +360,13 @@ nav a {
   color: #333;
   margin-bottom: 20px;
 }
+.btn
+.btn-light {
+  width: 700px;
+}
 
+.no-decor {
+  text-decoration: none;
+  color: inherit;
+}
 /* Add styling for ContactCard, Quick Links, and SocialIcons components as needed */

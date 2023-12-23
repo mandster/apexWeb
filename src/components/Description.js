@@ -1,10 +1,10 @@
-import React from 'react'
+
 import { Link } from 'react-router-dom'
 
 
 const Description = () => {
   return (
-    <div className='centered-text '>
+    <div className='centered-text mt-4'>
         <p className="tagline">
             Pioneering Excellence in Electric Switchgear
           </p>
@@ -14,7 +14,6 @@ const Description = () => {
             and innovation has made us a trusted and leading brand in the
             electric switchgear industry.
          <Link to="../About">more</Link>
-
           </p>
     </div>
     

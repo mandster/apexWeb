@@ -1,10 +1,8 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import slide2 from "../image/starters.jpg";
 import slide3 from "../image/controlswitches.jpg";
 import slide4 from "../image/submersiblepanels.jpg";
 import slide5 from "../image/contactors.jpg";
-import slide1 from "../image/allproducts.jpg";
 import "../styles.css"; // Import your styles if needed
 
 const ProductRow = () => {
@@ -32,7 +30,7 @@ const ProductRow = () => {
       name: "Air Break Contactors",
       thumbnail: slide5,
       description: "Protection device used in electrical installations",
-    },
+    }
   ];
 
   return (

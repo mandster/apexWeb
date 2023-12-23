@@ -1,5 +1,4 @@
 {
-  "homepage: ",
   "browser": {
     "crypto": false,
     "fs": false,

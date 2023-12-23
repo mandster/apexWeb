@@ -1,73 +1,67 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Dropdown } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-    const handleDropdownEnter = () => {
-      setIsDropdownOpen(true);
-    };
-  
-    const handleDropdownLeave = () => {
-      setIsDropdownOpen(false);
-    };
-  
-    const handleSubmenuEnter = () => {
-      setIsDropdownOpen(true);
-    };
-  
-    const handleSubmenuLeave = () => {
-      setIsDropdownOpen(false);
-    };
-  
-    return (
-      <div className="d-flex justify-content-center mt-5 basic">
-        <button className="btn btn-primary mr-2">Left Button 1</button>
-        <button className="btn btn-primary mr-2">Left Button 2</button>
-  
-        <Dropdown
-          show={isDropdownOpen}
-          onMouseEnter={handleDropdownEnter}
-          onMouseLeave={handleDropdownLeave}
-        >
-          <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-            Dropdown button
-          </Dropdown.Toggle>
-  
-          <Dropdown.Menu>
-            <Dropdown.Item href="#">Action</Dropdown.Item>
-            <Dropdown.Item href="#">Another action</Dropdown.Item>
-            <Dropdown
-              onMouseEnter={handleSubmenuEnter}
-              onMouseLeave={handleDropdownLeave}
-            >
-              <Dropdown.Toggle variant="secondary">Submenu &raquo;</Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item href="#">Submenu item 1</Dropdown.Item>
-                <Dropdown.Item href="#">Submenu item 2</Dropdown.Item>
-                <Dropdown
-                  onMouseEnter={handleSubmenuEnter}
-                  onMouseLeave={handleDropdownLeave}
-                >
-                  <Dropdown.Toggle variant="secondary">Submenu item 3 &raquo;</Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="#">Multi level 1</Dropdown.Item>
-                    <Dropdown.Item href="#">Multi level 2</Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown>
-                <Dropdown.Item href="#">Submenu item 4</Dropdown.Item>
-                <Dropdown.Item href="#">Submenu item 5</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          </Dropdown.Menu>
-        </Dropdown>
-  
-        <button className="btn btn-primary ml-2">Right Button</button>
-      </div>
-    );
+  const handleDropdownEnter = () => {
+    setIsDropdownOpen(true);
   };
-  
-  
+
+  const handleDropdownLeave = () => {
+    setIsDropdownOpen(false);
+  };
+
+  const handleDropdownEnter1 = () => {
+    setIsDropdownOpen(true);
+  };
+
+  const handleDropdownLeave1 = () => {
+    setIsDropdownOpen(false);
+  };
+
+  return (
+    <div className="d-flex justify-content-center mt-5 basic">
+      <button className="btn mr-4">Home</button>
+      <button className="btn ml-4">About us</button>
+      <Dropdown
+        show={isDropdownOpen}
+        onMouseEnter={handleDropdownEnter}
+        onMouseLeave={handleDropdownLeave}
+      >
+        <Dropdown.Toggle variant="" id="dropdown-basic">
+          Products
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu
+          onMouseEnter={handleDropdownEnter1}
+          onMouseLeave={handleDropdownLeave1}
+        >
+          <Dropdown.Item href="/Product/Starters">
+            Motor Starters
+            <Dropdown.Menu>
+              <Dropdown.Item href="/Product/DirectOnlineStarters">Direct Online Starters</Dropdown.Item>
+              <Dropdown.Item href="/Product/StarDeltaStarters">Star-Delta Starters</Dropdown.Item>
+              <Dropdown.Item href="/Product/ReverseForwardStarters">Forward-Reverse Starters</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown.Item>
+          <Dropdown.Item href="/Product/ControlSwitches">L.T. Control Switches</Dropdown.Item>
+          <Dropdown.Item href="/Product/SubmersiblePanels">Submersible Panels</Dropdown.Item>
+          <Dropdown.Item href="/Product/Limit Switches">Limit Switches</Dropdown.Item>
+          <Dropdown.Item href="/Product/Contactors">Air Break Contactors</Dropdown.Item>
+          <Dropdown.Item href="/Product/PlugsSockets">Plugs and Sockets</Dropdown.Item>
+          <Dropdown.Item href="/Product/PanelAccessories">Panel Accessories</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+
+      <button className="btn ml-2">
+        <Link className="no-decor" to="/Contact">
+          Contact Us
+        </Link>
+      </button>
+    </div>
+  );
+};
 
 export default Nav;
