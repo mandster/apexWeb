@@ -2,7 +2,7 @@
 const About = () => {
   return (
     <>
-      <main className="about-us">
+      <main className="about-us p-5 pt-2">
         <section className="hero">
           <div className="hero-content">
             <h1>Welcome to Apex Electricals</h1>
@@ -69,15 +69,24 @@ const About = () => {
         <section className="commitment-excellence">
           <div className="content-container">
             <h2>Commitment to Excellence</h2>
-            <p>
               The love and appreciation we have received over the years drive our
               commitment to continual improvement, innovation, the introduction
               of new products, global expansion, and significant contributions
               to society.
+          </div>
+        </section>
+        <section className="apex-electricals">
+          <div className="content-container">
+            <p>&quot;Power up your life with innovative electrical solutions!&ldquo;</p>
+            <p>
+              At Apex Electricals, we aspire to be a global leader in innovative
+              electrical solutions, fostering progress and sustainability across
+              industries. Through cutting-edge technologies and an unwavering
+              commitment to excellence, we empower our customers to achieve
+              their goals and improve the world around us.
             </p>
           </div>
         </section>
-
         <section className="our-mission">
           <div className="content-container">
             <h2>Our Mission</h2>
@@ -89,26 +98,14 @@ const About = () => {
           </div>
         </section>
 
-        <section className="apex-electricals">
-          <div className="content-container">
-            <h2>Apex Electricals</h2>
-            <p>&quot;Power up your life with innovative electrical solutions!&ldquo;</p>
-            <p>
-              At Apex Electricals, we aspire to be a global leader in innovative
-              electrical solutions, fostering progress and sustainability across
-              industries. Through cutting-edge technologies and an unwavering
-              commitment to excellence, we empower our customers to achieve
-              their goals and improve the world around us.
-            </p>
-          </div>
-        </section>
+
 
         <section className="the-facts">
           <div className="content-container">
             <h2>The Facts</h2>
             <ul>
               <li>
-                <strong>Using Innovation to Deliver Industry&quot;s Best</strong>
+                <strong>Using Innovation to Deliver Industry&#39;s Best</strong>
               </li>
               <li>
                 <strong>Customer-Centric:</strong> Focused on meeting the needs
