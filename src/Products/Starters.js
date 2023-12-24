@@ -19,7 +19,6 @@ const Starters = () => {
 <br></br>
     The primary components of a motor starter include Contactors, Overload Relays among other components.
     </div>
-
     <div className="product-container">
         <Link className="no-decor" to="/Product/Starters/DirectOnlineStarters">
       <div className=" p-4 centered-text">
