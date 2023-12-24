@@ -11,6 +11,10 @@
   width: 100%;
 }
 
+.a-paragraph {
+  font-size: 18px;
+}
+
 .btn-nav {
   border: 1px  solid #313131;
 }
@@ -119,6 +123,11 @@ nav a {
   font-size: 24px;
 }
 
+.product-container {
+ display:flex;
+ justify-content: space-around;
+}
+
 .para-main {
   font-size: 28px;
 }
@@ -165,6 +174,10 @@ nav a {
   font-size: 22px;
 }
 
+.main-content-pic {
+  max-width: 500px;
+}
+
 .thumb-description {
   width: 100%;
   color: #313131;
@@ -172,6 +185,7 @@ nav a {
   font-style: italic;
   padding: 0%;
 }
+
 
 .thumb-name {
   font-style: normal;
@@ -211,6 +225,17 @@ nav a {
 .row::after {
   content: "";
   flex: auto;
+}
+
+.thumbnail2 {
+  border:1px solid #d0d0d0;
+  min-width: 30px;
+  max-width: 300px;
+}
+
+.product-caption {
+display:contents;
+font-weight: bold;
 }
 
 /* Add media query for smaller screens if needed */

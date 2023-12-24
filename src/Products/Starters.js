@@ -1,34 +1,45 @@
+import starters from "../image/starters.jpg";
+import dol from "../image/dolclassic.jpg";
+import starDelta from "../image/asd.jpg";
+import reverseForward from "../image/reversing.jpg";
+import { Link } from "react-router-dom";
+
 
 const Starters = () => {
   return (
     <main>
-    <div className="wp-paragraph">
-      <p>Robust motor control and protection devices</p>
+        <h3 className="centered-text">Motor Starters</h3>
+       <div className=" centered-text"> <img src={ starters } alt="Apex Motor Starters" className="main-content-pic"/></div>
+    <h5  className="centered-text">
+      Robust motor control and protection devices
+    </h5>
+
+    <div className="a-paragraph p-3 m-5 pb-1 mb-1 mt-2">
+      A motor starter is an electrical device used to start, stop, and protect electric motors. It typically consists of a combination of components that work together to control the flow of electricity to the motor and provide the necessary protection against overloads, short circuits, and other electrical faults.
+<br></br>
+    The primary components of a motor starter include Contactors, Overload Relays among other components.
     </div>
 
-    <div className="wp-paragraph">
-      <p>A motor starter is an electrical device used to start, stop, and protect electric motors. It typically consists of a combination of components that work together to control the flow of electricity to the motor and provide the necessary protection against overloads, short circuits, and other electrical faults.</p>
-    </div>
+    <div className="product-container">
+        <Link className="no-decor" to="/Product/Starters/DirectOnlineStarters">
+      <div className=" p-4 centered-text">
+        <img src={ dol } alt="Apex Direct Online Motor Starter"  className="thumbnail2"/>
+        <br/>
+      <span className="product-caption">Direct Online Motor Starters</span>
+      </div></Link>
+      <Link  className="no-decor" to="/Product/Starters/StarDeltaStarters">
 
-    <div className="wp-paragraph">
-      <p>The primary components of a motor starter include Contactors, Overload Relays among other components.</p>
-    </div>
+      <div className=" p-4 centered-text">
+        <img src={ starDelta } alt="Apex Star Delta Starter"  className="thumbnail2"/>
+        <br/>
+      <span className="product-caption">  Star Delta Starters</span>
+      </div></Link>
+        <Link className="no-decor"  to="/Product/Starters/ReverseForwardStarters">
 
-    <div className="wp-columns">
-      <div className="wp-column">
-        <img src="http://sh030.global.temp.domains/~pexelect/apex-wp/wp-content/uploads/2023/06/Apex_march_23_-30-Copy.jpg" alt="Apex compact Direct Online Motor Starter" className="wp-image"/>
-        <figcaption className="wp-element-caption">Apex DOL Starters</figcaption>
-      </div>
-
-      <div className="wp-column">
-        <img src="http://sh030.global.temp.domains/~pexelect/apex-wp/wp-content/uploads/2023/06/Apex_march_23_-22.jpg" alt="Apex Star Automatic Delta Starter" className="wp-image"/>
-        <figcaption className="wp-element-caption">Apex Star Delta Starters</figcaption>
-      </div>
-
-      <div className="wp-column">
-        <img src="http://sh030.global.temp.domains/~pexelect/apex-wp/wp-content/uploads/2023/06/Apex_march_23_-17.jpg" alt="Apex Forward Reverse Starter" className="wp-image"/>
-        <figcaption className="wp-element-caption">Apex Forward Reverse Starters</figcaption>
-      </div>
+      <div className=" p-4 centered-text">
+        <img  src={ reverseForward }  alt="Apex Forward Reverse Starter"  className="thumbnail2"/>
+        <br/>
+      <span className="product-caption">  Apex Star Delta Starters</span>      </div></Link>
     </div>
   </main>
   )

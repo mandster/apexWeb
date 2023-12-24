@@ -23,8 +23,19 @@ const Nav = () => {
 
   return (
     <div className="d-flex justify-content-center mt-5 basic">
-      <button className="btn mr-4">Home</button>
-      <button className="btn ml-4">About us</button>
+      <button className="btn mr-4">
+      <Link className="no-decor" to="/">
+        Home
+        </Link>
+        </button>
+      <button className="btn ml-4">
+      <Link className="no-decor" to="/About">
+       
+        
+        About us
+        </Link>
+        
+        </button>
       <Dropdown
         show={isDropdownOpen}
         onMouseEnter={handleDropdownEnter}
@@ -41,9 +52,9 @@ const Nav = () => {
           <Dropdown.Item href="/Product/Starters">
             Motor Starters
             <Dropdown.Menu>
-              <Dropdown.Item href="/Product/DirectOnlineStarters">Direct Online Starters</Dropdown.Item>
-              <Dropdown.Item href="/Product/StarDeltaStarters">Star-Delta Starters</Dropdown.Item>
-              <Dropdown.Item href="/Product/ReverseForwardStarters">Forward-Reverse Starters</Dropdown.Item>
+              <Dropdown.Item href="/Product/Starters/DirectOnlineStarters">Direct Online Starters</Dropdown.Item>
+              <Dropdown.Item href="/Product/Starters/StarDeltaStarters">Star-Delta Starters</Dropdown.Item>
+              <Dropdown.Item href="/Product/Starters/ReverseForwardStarters">Forward-Reverse Starters</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown.Item>
           <Dropdown.Item href="/Product/ControlSwitches">L.T. Control Switches</Dropdown.Item>

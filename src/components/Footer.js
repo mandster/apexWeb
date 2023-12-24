@@ -15,17 +15,17 @@ const Footer = () => {
         </div>
         <div className="quick-links-column">
           <h2>Quick links</h2>
-          <Link to="/components/products/Starters">Motor Starters</Link>{" "}
+          <Link to="/Product/Starters">Motor Starters</Link>{" "}
           <br></br>
-          <Link to="/components/products/ControlSwitches">
+          <Link to="/Product/ControlSwitches">
             L.T. Control Switches
           </Link>
           <br></br>
-          <Link to="/components/products/SubmersiblePanels">
+          <Link to="/Product/SubmersiblePanels">
             Submersible Panels
           </Link>
           <br></br>
-          <Link to="/components/products/Accessories">Accessories</Link>
+          <Link to="/Product/PanelAccessories">Accessories</Link>
         </div>
         <div className="follow-us-column">
           <ContactCard />
