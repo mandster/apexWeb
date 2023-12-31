@@ -1,3 +1,4 @@
+import "./styles.css"
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -19,15 +20,22 @@ import PanelAccessories from "./Products/PanelAccessories";
 import DirectOnlineStarters from "./Products/DirectOnlineStarters";
 import StarDeltaStarters from "./Products/StarDeltaStarters";
 import ReverseForwardStarters from "./Products/ReverseForwardStarters";
-
-
+import  { useEffect } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-export default function App() {
-  return (
-   <> <div>
+export function useTitle(title) {
+  useEffect(() => {
+    const prevTitle = document.title
+    document.title = title
+    return () => {
+      document.title = prevTitle
+    }
+  })
+}
 
-    </div>
+export default function App() {
+  return ( 
+   <>
     <BrowserRouter>
     < Header />
       <Routes>
@@ -52,7 +60,9 @@ export default function App() {
       </Routes>
       <Footer />
     </BrowserRouter></>
+    
   );
+  
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

@@ -1,3 +1,11 @@
+html, body {
+  min-height: 100%;
+  font-family: Inter;
+
+}
+.container {
+  width: 100%;
+}
 
 .logo-text {
   font-size: 24px;
@@ -5,6 +13,12 @@
   font-family: Tahoma;
   text-decoration: none;
   vertical-align: top;
+}
+
+.caro{
+  width: 75%;
+  align-self: center;
+  margin: 0 auto;
 }
 
 .Home {
@@ -20,27 +34,29 @@
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  font-family: Inter; /* Use a popular font family */
+  width: 100%;
 }
 
 
 /* Media query for screens with a maximum width of 768 pixels (adjust as needed) */
 @media (max-width: 768px) {
+  .home {width: 100%;}
   .h-content {
     margin-left: 0px;
   }
   .footer {
     visibility:hidden ;
   }
-  .logo-container {
-    margin-right: 0;
+
+  .caro {
+    width: 95%;
   }
-  .carousel {
-    width: 100%; /* Each card takes up 100% of the product row width on smaller screens */
+  .main-logo {
+    width: 300px;
+  }
+  .dropdown-container {
+    width: 100%; /* Example: Make the dropdown container full width on smaller screens */
+    text-align: center; /* Center the items in the dropdown */
   }
 }
 
@@ -53,7 +69,7 @@
 
 .link {
   color: rgb(88, 88, 88);
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: none;
   margin-right: 10px; /* Adjust margin between links as needed */
 }
@@ -62,11 +78,8 @@
   margin-right: 0; /* Remove margin for the last link */
 }
 
-.logo-container {
-  margin-right: 20px;
-}
-nav {
-  display: flex;
+
+.my-nav {
 }
 
 .nav-bottom {
@@ -74,12 +87,11 @@ nav {
 }
 
 nav a {
-  margin-right: 10px;
   text-decoration: none;
   color: #333;
-  font-family: Inter;
-  font-weight: 500;
-  font-size: 16px;
+  font-family: 'Lato', sans-serif  !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
   padding: 10px;
 }
 
@@ -138,7 +150,7 @@ nav a {
   align-items: center;
   justify-content: space-around;
   margin: 20px auto;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .company-image {
@@ -175,7 +187,15 @@ nav a {
 }
 
 .main-content-pic {
-  max-width: 500px;
+  max-width: 600px;
+}
+
+.a-border {
+  border: 1px solid rgb(230, 229, 229) ;
+}
+
+.para_background {
+  background-color: rgb(244, 244, 244);
 }
 
 .thumb-description {
@@ -290,6 +310,11 @@ font-weight: bold;
   padding: 20px;
 }
 
+.footer-col { 
+  width: 350px;
+  text-align: left;
+}
+
 .footer-bed {
   justify-content: space-between;
   background-color: #575656;
@@ -298,8 +323,11 @@ font-weight: bold;
 }
 
 .logo-container {
-  flex: 1; /* Takes up 1 part of the available space */
+ float: left;
 }
+
+.nav-container {
+align-self:right;  }
 
 .contact-column,
 .quick-links-column,
@@ -318,13 +346,13 @@ font-weight: bold;
 }
 
 .main-logo {
-  width: 40%;
-  max-width: 40%; /* Adjust the size as needed */
+  max-width: 300px;
 }
 
 .footer-logo {
-  width: 75%;
-  max-width: 75%; /* Adjust the size as needed */
+  margin-left: 20px;
+ width: 20%; /* Adjust the size as needed */
+ text-align: center;
 }
 .italics {
   font-style: italic;
@@ -336,6 +364,10 @@ font-weight: bold;
 
 .small-text {
   font-size: 10px;
+}
+
+.xxs-text {
+  font-size: 8px;
 }
 
 .medium-text {
@@ -385,6 +417,7 @@ font-weight: bold;
   color: #333;
   margin-bottom: 20px;
 }
+
 .btn
 .btn-light {
   width: 700px;

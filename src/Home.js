@@ -3,7 +3,7 @@ import ProductRow from "./components/ProductRow";
 import Description from "./components/Description";
 const Home = () => {
   return (
-    <div className="Home ">
+    <div className="Home">
       <Carousel />
       <Description />
       <ProductRow />

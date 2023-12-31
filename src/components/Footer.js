@@ -1,4 +1,4 @@
-import logo from "../image/Apex_logo_23.png";
+import dnvLogo from "../image/dnv_logo.png";
 import { Link } from "react-router-dom";
 import "../styles.css";
 import ContactCard from "./ContactCard";
@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        <div className="logo-container">
-          <Link to="/">
-            <img src={logo} alt="APEX ELECTRICALS" className="footer-logo" />
-          </Link>
+        <div className="footer-col xxs-text centered-text">
+            <img src={ dnvLogo} alt="Apex ISO 9001" className="footer-logo"></img>
+            <br></br>
+            ISO 9001, by DNV Netherlands
         </div>
         <div className="quick-links-column">
           <h2>Quick links</h2>

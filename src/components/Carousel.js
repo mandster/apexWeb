@@ -1,5 +1,3 @@
-// Carousel.js
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,8 +19,8 @@ const Carousel = () => {
   };
 
   return (
-    <div style={{ width: "80%", margin: "0 auto" }}>
-      <Slider {...settings}>
+    <div className="caro">
+      <Slider {...settings} >
         <div>
           <img src={slide1} alt="Slide 1" style={{ width: "100%" }} />
         </div>

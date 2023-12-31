@@ -98,14 +98,13 @@ const About = () => {
           </div>
         </section>
 
-
-
         <section className="the-facts">
           <div className="content-container">
             <h2>The Facts</h2>
             <ul>
               <li>
-                <strong>Using Innovation to Deliver Industry&#39;s Best</strong>
+                <strong>Using Innovation to Deliver Industry&#39;
+                  s Best</strong>
               </li>
               <li>
                 <strong>Customer-Centric:</strong> Focused on meeting the needs
