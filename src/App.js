@@ -22,6 +22,7 @@ import StarDeltaStarters from "./Products/StarDeltaStarters";
 import ReverseForwardStarters from "./Products/ReverseForwardStarters";
 import  { useEffect } from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import ProductDetail from "./components/ProductDetail";
 
 export function useTitle(title) {
   useEffect(() => {
@@ -51,6 +52,7 @@ export default function App() {
         <Route path="/Product/LimitSwitches" element={<LimitSwitches />} />
         <Route path="/Product/PlugsSockets" element={<PlugsSockets />} />
         <Route path="/Product/Contactors" element={<Contactors />} />
+        <Route path="/Products/:id" component={ProductDetail} />
         <Route path="/Product/Starters/DirectOnlineStarters" element={<DirectOnlineStarters />} />
         <Route path="/Product/Starters/StarDeltaStarters" element={<StarDeltaStarters />} />
         <Route path="/Product/Starters/ReverseForwardStarters" element={<ReverseForwardStarters />} />

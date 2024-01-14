@@ -1,11 +1,11 @@
 import "../styles.css";
-import Nav from "./Nav";
+import Navi from "./Nav";
 
 const Header = () => {
   return (
     <><div className="header">
       <div className="nav-container ">
-        <Nav />
+        <Navi />
       </div>
     </div><br></br></>
   );

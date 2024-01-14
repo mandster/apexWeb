@@ -37,7 +37,6 @@ html, body {
   width: 100%;
 }
 
-
 /* Media query for screens with a maximum width of 768 pixels (adjust as needed) */
 @media (max-width: 768px) {
   .home {width: 100%;}
