@@ -1,4 +1,18 @@
 import MenuItems from './MenuItems';
+
+import PropTypes from 'prop-types';
+
+Dropdown.propTypes = {
+  submenus: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    items: PropTypes.arrayOf(PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+    })).isRequired,
+  })).isRequired,
+  dropdown: PropTypes.bool.isRequired,
+  depthLevel: PropTypes.number.isRequired,
+};
 const Dropdown = ({ submenus, dropdown, depthLevel }) => {
   depthLevel = depthLevel + 1;
   const dropdownClass = depthLevel > 1 ? 'dropdown-submenu' : '';

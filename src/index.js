@@ -1,3 +1,5 @@
+/* global createRoot */
+
 import React from "react";  
 import ReactDOM from "react-dom/client";
 import "./index.css";
@@ -6,9 +8,11 @@ import reportWebVitals from "./reportWebVitals";
 
 let container = null;
 
-document.addEventListener('DOMContentLoaded', function(event) {
+document.addEventListener('DOMContentLoaded', function () {
+  // Remove the 'event' parameter if not used
   if (!container) {
-    const root = ReactDOM.createRoot(document.getElementById("root"));
+    container = document.getElementById('root');
+    const root = createRoot(container);
     root.render(
       <React.StrictMode>
         <App />
@@ -16,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     );
   }
 });
+
 
 
 
