@@ -1,5 +1,5 @@
 import "./styles.css"
-import React from "react";
+import "./App.css"
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
@@ -36,7 +36,7 @@ export function useTitle(title) {
 
 export default function App() {
   return ( 
-   <>
+   
     <BrowserRouter>
     < Header />
       <Routes>
@@ -56,12 +56,10 @@ export default function App() {
         <Route path="/Product/Starters/DirectOnlineStarters" element={<DirectOnlineStarters />} />
         <Route path="/Product/Starters/StarDeltaStarters" element={<StarDeltaStarters />} />
         <Route path="/Product/Starters/ReverseForwardStarters" element={<ReverseForwardStarters />} />
-
-
         <Route path="*" element={<NoPage />} />
       </Routes>
       <Footer />
-    </BrowserRouter></>
+    </BrowserRouter>
     
   );
   

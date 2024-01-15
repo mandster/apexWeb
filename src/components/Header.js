@@ -1,13 +1,17 @@
-import "../styles.css";
-import Navi from "./Nav";
+import Navbar from './Navbar';
+import logo from "../image/Apex_logo_23.png";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <><div className="header">
-      <div className="nav-container ">
-        <Navi />
+    <header>
+      <div className="nav-area">
+        <Link to="/" className="logo">
+        <img src={logo} alt="APEX ELECTRICALS" className="main-logo" />
+        </Link>
+        <Navbar />
       </div>
-    </div><br></br></>
+    </header>
   );
 };
 
