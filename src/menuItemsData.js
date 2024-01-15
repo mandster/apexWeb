@@ -4,54 +4,76 @@ export const menuItemsData = [
     url: '/',
   },
   {
-    title: 'Services',
-    url: '/services',
+    title: 'About',
+    url: '/About',
+  }
+,
+{
+  title: 'Products',
+  url: '/Products',
     submenu: [
       {
-        title: 'web design',
-        url: 'web-design',
-      },
-      {
-        title: 'web development',
-        url: 'web-dev',
+        title: 'Motor Starters',
+        url: 'Product/Starters',
         submenu: [
           {
-            title: 'Frontend',
-            url: 'frontend',
+            title: 'Direct Online Motor Starters',
+            url: 'Product/Starters/DirectOnlineStarters',
           },
           {
-            title: 'Backend',
-            submenu: [
-              {
-                title: 'NodeJS',
-                url: 'node',
-              },
-              {
-                title: 'PHP',
-                url: 'php',
-              },
-            ],
+            title: 'Star Delta Motor Starters',
+            url: 'Product/Starters/StarDeltaStarters',
           },
-        ],
+          {
+            title: 'Reverse Forward Starters',
+            url: 'Product/Starters/ReverseForwardStarters',
+          },
+
+        ]
+      },
+
+      {
+        title: 'Control Switches',
+        url: 'Product/ControlSwitches',
+        submenu: [ {
+          title: 'Forward Reverse Switches',
+          url: '/Product/ControlSwitches/ReverseForwardSwitches',
+        },
+        {
+          title: 'Change-over Switches',
+          url: '/Product/ControlSwitches/ReverseForwardSwitches',
+        },
+        {
+          title: 'On/Off Switches',
+          url: '/Product/ControlSwitches/OnOffSwitches',
+        },
+        {
+          title: 'Star-Delta Switches',
+          url: '/Product/ControlSwitches/StarDeltaSwitches',
+        },
+
+        ]
       },
       {
-        title: 'SEO',
-        url: 'seo',
+        title: 'Submersible Panels',
+        url: '/Product/SubmersiblePanels',  
       },
-    ],
+      {
+        title: 'Limit Switches',
+        url: '/Product/LimitSwitches',  
+      },   
+      {
+        title: 'Plugs and Sockets',
+        url: '/Product/PlugSockets',  
+      },  
+      {
+        title: 'Panel Accessories',
+        url: '/Product/PanelAccessories',  
+      },    
+    ]
   },
-  {
-    title: 'About',
-    url: '/about',
-    submenu: [
-      {
-        title: 'Who we are',
-        url: 'who-we-are',
-      },
-      {
-        title: 'Our values',
-        url: 'our-values',
-      },
-    ],
-  },
-];
+    {
+      title: 'Contact us',
+      url: '/Contact',
+    }
+    ]
