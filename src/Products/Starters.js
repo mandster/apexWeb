@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Starters = () => {
   return (
     <main>
-    <h3 className="centered-text  a-border para_background">Motor Starters</h3>
+    <h3 className="centered-text  a-border para_background mt-3 mb-1">Motor Starters</h3>
        <div className=" centered-text"> <img src={ starters } alt="Apex Motor Starters" className="main-content-pic"/></div>
     <h5  className="centered-text">
       Robust motor control and protection devices
@@ -18,7 +18,7 @@ const Starters = () => {
     The primary components of a motor starter include Contactors, Overload Relays among other components.
     </div>
     <div className="product-container">
-        <Link className="no-decor" to="/Product/Starters/DirectOnlineStarters">
+        <Link className="no-decor" to="/ProductDetail/DolClassic">
       <div className=" p-4 centered-text">
         <img src={ dol } alt="Apex Direct Online Motor Starter"  className="thumbnail2"/>
         <br/>

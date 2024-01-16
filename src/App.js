@@ -52,7 +52,7 @@ export default function App() {
         <Route path="/Product/LimitSwitches" element={<LimitSwitches />} />
         <Route path="/Product/PlugsSockets" element={<PlugsSockets />} />
         <Route path="/Product/Contactors" element={<Contactors />} />
-        <Route path="/Products/:id" component={ProductDetail} />
+        <Route path="/ProductDetail/:id" element={ProductDetail} />
         <Route path="/Product/Starters/DirectOnlineStarters" element={<DirectOnlineStarters />} />
         <Route path="/Product/Starters/StarDeltaStarters" element={<StarDeltaStarters />} />
         <Route path="/Product/Starters/ReverseForwardStarters" element={<ReverseForwardStarters />} />

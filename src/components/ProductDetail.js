@@ -7,6 +7,7 @@ import productsData from '../Products/productsData'; // Assuming you have a file
 const ProductDetail = () => {
   // Access the productId from route parameters using useParams
   const { productId } = useParams();
+  console.log(productId)
   // Find the product based on the provided productId
   const product = productsData.find((p) => p.id === productId);
 
