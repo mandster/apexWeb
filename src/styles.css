@@ -148,7 +148,7 @@ nav a {
   max-width: 1000px;
 }
 
-.company-image {
+.company-image  {
   width: 40%;
   border-radius: 8px;
 }
@@ -179,6 +179,7 @@ nav a {
   color: #313131;
   margin-bottom: 15px;
   font-size: 22px;
+  text-align: justify;
 }
 
 .main-content-pic {
@@ -218,10 +219,11 @@ nav a {
   .product-row {
     width: 90%; /* Each card takes up 100% of the product row width on smaller screens */
   }
-}
+
 .main-logo {
   width: auto;
 }
+
 .product-card {
   flex: 1 0 calc(33.33% - 20px); /* 33.33% width with some margin */
   text-align: center;
@@ -255,12 +257,15 @@ font-weight: bold;
 }
 
 /* Add media query for smaller screens if needed */
-@media (max-width: 768px) {
   .product-card {
     flex: 1 0 calc(90% - 20px); /* 50% width with some margin for smaller screens */
   }
-}
 
+  .company-image  {
+    width: 100%;
+    border-radius: 4px;
+  }
+  
 .h-center {
   margin-left: 10%;
   align-items: center;
@@ -292,7 +297,7 @@ font-weight: bold;
   margin-top: 15px;
 }
 
-
+}
 
 /* Add this to your CSS file */
 
@@ -607,7 +612,71 @@ border: 1px solid gray;
   display: none;
 }
 
+.variant-container {
+  width: 100%;
+  display: table;
+  margin-bottom: 30px;
+}
+
+.variant {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+.product-description {
+  width: 60%;
+  float: left;
+  padding: 10px;
+  display: table-cell;
+} 
+.float-child2 {
+  width: 40%;
+  display: table-cell;
+  float: right;
+
+}   
+
+.float-right {
+  float: right;
+} 
+
+.product-image {
+  width: 40%;
+}
+
+.variant img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 @media (max-width: 768px) {
+  .variant-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px;
+  }
+  .float-child {
+    width: 100%;
+    padding: 10px;
+  }  
+  
+  .variant {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 3px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  
+  .variant img {
+    max-width: 100%;
+    height: auto;
+  }
   .navbar {
     flex-direction: column;
   }
@@ -645,4 +714,18 @@ border: 1px solid gray;
   .nav-menu.show {
     display: flex;
   }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+
+  img.centered {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+
 }

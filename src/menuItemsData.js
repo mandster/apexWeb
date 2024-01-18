@@ -35,7 +35,8 @@ export const menuItemsData = [
       {
         title: 'Control Switches',
         url: 'Product/ControlSwitches',
-        submenu: [ {
+        submenu: [ 
+        {
           title: 'Forward Reverse Switches',
           url: '/Product/ControlSwitches/ReverseForwardSwitches',
         },
