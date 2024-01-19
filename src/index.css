@@ -19,6 +19,12 @@ body {
     url("./fonts/Inter.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Salmaal";   /*Can be any text*/
+  src: local("Salmaal"),
+    url("./fonts/Salmaal.otf") format("truetype");
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
