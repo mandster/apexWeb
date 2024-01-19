@@ -1,5 +1,5 @@
-
-html, body {
+html,
+body {
   font-family: Inter;
 }
 .container {
@@ -11,10 +11,10 @@ html, body {
   font-weight: bold;
   font-family: Tahoma;
   text-decoration: none;
-  vertical-align: top;  
-} 
+  vertical-align: top;
+}
 
-.caro{
+.caro {
   width: 75%;
   align-self: center;
   margin: 0 auto;
@@ -22,7 +22,6 @@ html, body {
 
 #sub-drop {
 }
-
 
 .Home {
   width: 100%;
@@ -33,7 +32,7 @@ html, body {
 }
 
 .btn-nav {
-  border: 1px  solid #313131;
+  border: 1px solid #313131;
 }
 
 .header {
@@ -42,12 +41,14 @@ html, body {
 
 /* Media query for screens with a maximum width of 768 pixels (adjust as needed) */
 @media (max-width: 768px) {
-  .home {width: 100%;}
+  .home {
+    width: 100%;
+  }
   .h-content {
     margin-left: 0px;
   }
   .footer {
-    visibility:hidden ;
+    visibility: hidden;
   }
 
   .caro {
@@ -56,7 +57,6 @@ html, body {
   .main-logo {
     width: 30%;
   }
-
 }
 
 .row-container {
@@ -77,7 +77,6 @@ html, body {
   margin-right: 0; /* Remove margin for the last link */
 }
 
-
 .my-nav {
 }
 
@@ -88,7 +87,7 @@ html, body {
 nav a {
   text-decoration: none;
   color: #333;
-  font-family: 'Lato', sans-serif  !important;
+  font-family: "Lato", sans-serif !important;
   font-weight: 400 !important;
   font-size: 18px !important;
   padding: 10px;
@@ -108,7 +107,6 @@ nav a {
   z-index: 0;
   flex-direction: column; /* Stack child elements vertically */
 /* } */
-
 
 /* Add this to your CSS file */
 .overlay-text {
@@ -132,8 +130,8 @@ nav a {
 }
 
 .product-container {
- display:flex;
- justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .para-main {
@@ -149,7 +147,7 @@ nav a {
   max-width: 1000px;
 }
 
-.company-image  {
+.company-image {
   width: 40%;
   border-radius: 8px;
 }
@@ -188,7 +186,7 @@ nav a {
 }
 
 .a-border {
-  border: 1px solid rgb(230, 229, 229) ;
+  border: 1px solid rgb(230, 229, 229);
 }
 
 .para_background {
@@ -203,7 +201,6 @@ nav a {
   padding: 0%;
 }
 
-
 .thumb-name {
   font-style: normal;
   font-weight: bold;
@@ -213,7 +210,8 @@ nav a {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;}
+  justify-content: space-between;
+}
 
 /* Media query for screens with a maximum width of 768 pixels (adjust as needed) */
 @media (max-width: 768px) {
@@ -221,83 +219,82 @@ nav a {
     width: 90%; /* Each card takes up 100% of the product row width on smaller screens */
   }
 
-.main-logo {
-  width: auto;
-}
+  .main-logo {
+    width: auto;
+  }
 
-.product-card {
-  flex: 1 0 calc(33.33% - 20px); /* 33.33% width with some margin */
-  text-align: center;
-  text-decoration: none;
-  margin: 10px;
-  padding: 10px;
-  color: #333; /* Adjust text color as needed */
-}
+  .product-card {
+    flex: 1 0 calc(33.33% - 20px); /* 33.33% width with some margin */
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    color: #333; /* Adjust text color as needed */
+  }
 
-.thumbnail {
-  max-height: 250px; /* Adjust max height as needed */
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-  border: 1px solid rgb(192, 191, 191);
-}
-.row::after {
-  content: "";
-  flex: auto;
-}
+  .thumbnail {
+    max-height: 250px; /* Adjust max height as needed */
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border: 1px solid rgb(192, 191, 191);
+  }
+  .row::after {
+    content: "";
+    flex: auto;
+  }
 
-.thumbnail2 {
-  border:1px solid #d0d0d0;
-  min-width: 30px;
-  max-width: 300px;
-}
+  .thumbnail2 {
+    border: 1px solid #d0d0d0;
+    min-width: 30px;
+    max-width: 300px;
+  }
 
-.product-caption {
-display:contents;
-font-weight: bold;
-}
+  .product-caption {
+    display: contents;
+    font-weight: bold;
+  }
 
-/* Add media query for smaller screens if needed */
+  /* Add media query for smaller screens if needed */
   .product-card {
     flex: 1 0 calc(90% - 20px); /* 50% width with some margin for smaller screens */
   }
 
-  .company-image  {
+  .company-image {
     width: 100%;
     border-radius: 4px;
   }
-  
-.h-center {
-  margin-left: 10%;
-  align-items: center;
-  align-content: center;
-}
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2cqi;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  align-items: center;
-  margin: 10px auto;
-  justify-content: space-between;
-}
 
-.contact-column {
-  flex-basis: calc(
-    50% - 20px
-  ); /* Adjust as needed, considering the padding and space between columns */
-  margin: 10px;
-}
+  .h-center {
+    margin-left: 10%;
+    align-items: center;
+    align-content: center;
+  }
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2cqi;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    align-items: center;
+    margin: 10px auto;
+    justify-content: space-between;
+  }
 
-.address,
-.contact-details {
-  margin-top: 15px;
-}
+  .contact-column {
+    flex-basis: calc(
+      50% - 20px
+    ); /* Adjust as needed, considering the padding and space between columns */
+    margin: 10px;
+  }
 
+  .address,
+  .contact-details {
+    margin-top: 15px;
+  }
 }
 
 /* Add this to your CSS file */
@@ -310,7 +307,7 @@ font-weight: bold;
   padding: 20px;
 }
 
-.footer-col { 
+.footer-col {
   width: 350px;
   text-align: left;
 }
@@ -323,11 +320,12 @@ font-weight: bold;
 }
 
 .logo-container {
- float: left;
+  float: left;
 }
 
 .nav-container {
-align-self:right;  }
+  align-self: right;
+}
 
 .contact-column,
 .quick-links-column,
@@ -351,8 +349,8 @@ align-self:right;  }
 
 .footer-logo {
   margin-left: 20px;
- width: 20%; /* Adjust the size as needed */
- text-align: center;
+  width: 20%; /* Adjust the size as needed */
+  text-align: center;
 }
 .italics {
   font-style: italic;
@@ -418,8 +416,7 @@ align-self:right;  }
   margin-bottom: 20px;
 }
 
-.btn
-.btn-light {
+.btn .btn-light {
   width: 700px;
 }
 
@@ -465,7 +462,6 @@ header {
 .menu-items {
   position: relative;
   font-size: 14px;
-
 }
 
 .menu-items a {
@@ -484,27 +480,25 @@ header {
   background-color: transparent;
   cursor: pointer;
   width: 100%;
-
 }
 
 button span {
   margin-left: 3px;
 }
 
-.menu-items > a, .menu-items button {
+.menu-items > a,
+.menu-items button {
   text-align: left;
   padding: 0.7rem 1rem;
-
 }
 
 .menu-items a:hover,
 .menu-items button:hover {
-
   background-color: #eeeded;
 }
 
 header h2 {
-  font-family: Salmaal ;
+  font-family: Salmaal;
   background-color: #eeeded;
   font-weight: bold;
 }
@@ -533,8 +527,7 @@ header h2 {
   background-color: #fff;
   border-radius: 0.5rem;
   display: none;
-width: 150% !important;
-
+  width: 150% !important;
 }
 
 .dropdown.show {
@@ -551,7 +544,7 @@ width: 150% !important;
 
 /* content */
 
-.content {  
+.content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 20px;
@@ -598,14 +591,12 @@ width: 150% !important;
   list-style: none;
   margin: 0;
   padding: 0;
-border: 1px solid gray;
-
+  border: 1px solid gray;
 }
 
 .nav-item {
   margin-right: 20px;
-border: 1px solid gray;
-
+  border: 1px solid gray;
 }
 
 .nav-link {
@@ -637,7 +628,6 @@ border: 1px solid gray;
   color: #4e4f50;
   font-style: italic;
   text-align: justify;
-  
 }
 
 .float-child2 {
@@ -656,16 +646,29 @@ border: 1px solid gray;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-
 }
 
 .variant img {
   max-width: 100%;
   height: auto;
 }
+.custom-list {
+  list-style: none;
+  padding: 0;
+}
 
+.custom-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
 
-
+.custom-list li i {
+  margin-right: 10px;
+  color: #007bff; /* Set your desired icon color */
+}
 
 @media (max-width: 768px) {
   .variant-container {
@@ -677,8 +680,8 @@ border: 1px solid gray;
   .float-child {
     width: 100%;
     padding: 10px;
-  }  
-  
+  }
+
   .variant {
     width: 100%;
     margin-bottom: 5px;
@@ -686,7 +689,7 @@ border: 1px solid gray;
     box-sizing: border-box;
     text-align: left;
   }
-  
+
   .variant img {
     max-width: 100%;
     height: auto;
@@ -740,6 +743,4 @@ border: 1px solid gray;
     max-width: 100%;
     height: auto;
   }
-
-
 }
