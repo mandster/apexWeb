@@ -5,7 +5,7 @@ const ReverseForwardStarters = () => {
   return (
     <>
       <header>
-        <h2 className="centered-text">Star Delta Motor Starters</h2>
+        <h2 className="centered-text">Reverse Forward Motor Starters</h2>
       </header>
 
       {/* <img className="centered" src="your-big-image.jpg" alt="Big Image" /> */}
@@ -24,16 +24,22 @@ conveyors, or other equipment in both directions. </p>
     
     </div>
 
-<p>Key features and principles of Reverse Forward Motor Starters:</p> <p>
-
-Direction Control: The primary function of a Reverse Forward Motor Starter is to control the direction of the motor's rotation. This is achieved by changing the phase sequence of the motor windings, which determines the direction of the magnetic field and, subsequently, the direction of rotation.
-</p> <p>
-Switching Mechanism: The starter typically includes a switching mechanism that allows the user to select between forward and reverse modes. This can be achieved using a manual switch, a control panel, or in more advanced systems, through automated control systems.
-</p> <p>
-Protection: Many reverse forward starters incorporate protection features to safeguard the motor and the electrical system. These may include overload protection to prevent excessive current draw, short circuit protection, and other safety measures.
-</p> <p>
-Applications: Reverse Forward Motor Starters find applications in various industries where motors need to reverse direction periodically. Common uses include conveyor systems, cranes, winches, and other machinery requiring bidirectional movement.
-</p> </div>
+<p>
+ <i>Key features and principles of Reverse Forward Motor Starters: </i>
+</p> 
+<p>
+<i>Direction Control:</i> The primary function of a Reverse Forward Motor Starter is to control the direction of the motor's rotation. This is achieved by changing the phase sequence of the motor windings, which determines the direction of the magnetic field and, subsequently, the direction of rotation.
+</p> 
+<p>
+<i>Switching Mechanism:</i> The starter typically includes a switching mechanism that allows the user to select between forward and reverse modes. This can be achieved using a manual switch, a control panel, or in more advanced systems, through automated control systems.
+</p> 
+<p>
+<i>Protection:</i> Many reverse forward starters incorporate protection features to safeguard the motor and the electrical system. These may include overload protection to prevent excessive current draw, short circuit protection, and other safety measures.
+</p> 
+<p>
+<i>Applications:</i> Reverse Forward Motor Starters find applications in various industries where motors need to reverse direction periodically. Common uses include conveyor systems, cranes, winches, and other machinery requiring bidirectional movement.
+</p> 
+</div>
 
 
     </>
