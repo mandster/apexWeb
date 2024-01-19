@@ -18,8 +18,8 @@ const ControlSwitches = () => {
         </div>
         <div>
           The contacts used are alloys that provide long life and millions of
-          operations without any problem. Choice can be made according to two
-          parameters viz. load of your application and function.
+          operations without any problem. Choice can be made according to
+          parameters like load of your application and function.
         </div>
         <div>
           We manufacture Switches in two capacities 32 Amps and 63 Amps which
