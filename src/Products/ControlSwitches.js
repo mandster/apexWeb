@@ -26,25 +26,14 @@ const ControlSwitches = () => {
           suit the most low voltage needs. Different configurations manufactured
           by us are as follows:
           <ul className="custom-list">
-            <li>
-              <i className="fas fa-caret-right"></i> On-Off Switches
+            <li className="custom-list-item">On-Off Switches</li>
+            <li className="custom-list-item">Forward-Reverse Switches</li>
+            <li className="custom-list-item">
+              Forward-Reverse Pole Changing Switches
             </li>
-            <li>
-              <i className="fas fa-caret-right"></i> Forward-Reverse Switches
-            </li>
-            <li>
-              <i className="fas fa-caret-right"></i> Forward-Reverse Pole
-              Changing Switches
-            </li>
-            <li>
-              <i className="fas fa-caret-right"></i> Change-Over Switches
-            </li>
-            <li>
-              <i className="fas fa-caret-right"></i> Star-Delta Switches
-            </li>
-            <li>
-              <i className="fas fa-caret-right"></i> Phase Changer Switches
-            </li>
+            <li className="custom-list-item">Change-Over Switches</li>
+            <li className="custom-list-item">Star-Delta Switches</li>
+            <li className="custom-list-item">Phase Changer Switches</li>
           </ul>
         </div>
         <div className="variant-container">

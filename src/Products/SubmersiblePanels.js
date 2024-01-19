@@ -6,7 +6,7 @@ const SubmersiblePanels = () => {
   return (
     <>
       <header>
-        <h2 className="centered-text">Star Delta Motor Starters</h2>
+        <h2 className="centered-text">Submersible Pump Control Panel</h2>
       </header>
 
       {/* <img className="centered" src="your-big-image.jpg" alt="Big Image" /> */}

@@ -652,22 +652,24 @@ header h2 {
   max-width: 100%;
   height: auto;
 }
-.custom-list {
-  list-style: none;
-  padding: 0;
-}
-
-.custom-list li {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #333;
-  display: flex;
-  align-items: center;
-}
 
 .custom-list li i {
   margin-right: 10px;
-  color: #007bff; /* Set your desired icon color */
+  color: #6a6b6b; /* Set your desired icon color */
+}
+.custom-list-item {
+  font-size: 19px;
+  font-style: italic;
+  list-style-type: square !important; /* Remove default bullet style */
+  margin-left: 1em; /* Adjust the indentation as needed */
+  position: relative;
+}
+
+.custom-list-item::before {
+  color: #4d4d4d; /* Set the color as needed */
+  font-size: 1.5em; /* Adjust the size as needed */
+  position: absolute;
+  left: -1em; /* Adjust the position as needed */
 }
 
 @media (max-width: 768px) {
