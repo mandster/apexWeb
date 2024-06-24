@@ -5,12 +5,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 let container = null;
 
 document.addEventListener('DOMContentLoaded', function () {
   // Remove the 'event' parameter if not used
   if (!container) {
+    
     container = document.getElementById('root');
     const root = createRoot(container);
     root.render(

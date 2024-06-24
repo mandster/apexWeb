@@ -38,6 +38,7 @@ export default function App() {
   return ( 
    
     <BrowserRouter>
+    <div className="container"> 
     < Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -59,6 +60,7 @@ export default function App() {
         <Route path="*" element={<NoPage />} />
       </Routes>
       <Footer />
+      </div>
     </BrowserRouter>
     
   );

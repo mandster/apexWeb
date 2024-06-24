@@ -50,7 +50,9 @@ body {
   .footer {
     visibility: hidden;
   }
-
+.container {
+  width: 100%;
+}
   .caro {
     width: 95%;
   }
@@ -734,7 +736,6 @@ header h2 {
     display: flex;
   }
   header {
-    background-color: #333;
     color: #fff;
     padding: 20px 0;
   }
