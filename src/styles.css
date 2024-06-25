@@ -515,7 +515,7 @@ header h2 {
   border-left: 0.32em solid transparent;
 }
 
-.dropdown {
+.dropdowning {
   position: absolute !important;
   right: 0;
   left: auto;
@@ -532,11 +532,11 @@ header h2 {
   width: 150% !important;
 }
 
-.dropdown.show {
+.dropdowning.show {
   display: block;
 }
 
-.dropdown .dropdown-submenu {
+.dropdowning .dropdown-submenu {
   position: absolute !important;
   width: 125% !important;
   left: 100%;
@@ -565,7 +565,6 @@ header h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
   padding: 10px;
 }
 
@@ -598,7 +597,6 @@ header h2 {
 
 .nav-item {
   margin-right: 20px;
-  border: 1px solid gray;
 }
 
 .nav-link {
@@ -738,6 +736,10 @@ header h2 {
   header {
     color: #fff;
     padding: 20px 0;
+  }
+
+  .header-menu {
+    width: 100%;
   }
 
   img.centered {
