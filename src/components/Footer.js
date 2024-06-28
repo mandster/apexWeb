@@ -8,11 +8,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        <div className="footer-col xxs-text centered-text">
-            <img src={ dnvLogo} alt="Apex ISO 9001" className="footer-logo"></img>
-            <br></br>
-            ISO 9001, by DNV Netherlands
-        </div>
+  
         <div className="quick-links-column">
           <h2>Quick links</h2>
           <Link className="no-decor" to="/Product/Starters">Motor Starters</Link>
@@ -34,10 +30,17 @@ const Footer = () => {
         <div className="follow-us-column">
           <h2>Visit us on</h2>
           <SocialIcons />
+          <div className="footer-col xxs-text mt-5">
+
+             <img src={ dnvLogo} alt="Apex ISO 9001" className="dnv-logo"></img>
+            <br></br>
+            ISO 9001, by DNV
+        </div>
+
         </div>
       </div>
       <div className="centered-text medium-text footer-bed">
-        Copyright @2023 Apex Electricals
+        Copyright @2024 Apex Electricals
       </div>
     </>
   );

@@ -1,14 +1,10 @@
 import SocialIcons from "./SocialIcons";
-import logo from "../image/Apex_logo_23.png";
 
 const Contact = () => {
   return (
-      <><h2 className="centered-text mt-4">Contact Us</h2><div className="contact-container">
+      <><h2 className="centered-text mt-5">Contact Us</h2><div className="contact-container">
       <div className="contact-column" id="1">
         <div className="address italics">
-          <p>
-            <img src={logo} alt="APEX ELECTRICALS" className="footer-logo" />
-          </p>
           <p>Apex House E-18 Industrial Area</p>
           <p>Jalandhar - 144004, Punjab, India</p>
         </div>

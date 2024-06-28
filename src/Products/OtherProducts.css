@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Optional: space between rows */
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure columns stay in a row */
+}
+
+.equal-height-row {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid #ddd; /* Optional: to visually see the boundaries */
+    padding: 10px; /* Optional: adjust padding as needed */
+}
+
+.col-12 {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+.col-md-8, .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.product-image {
+    width: 50%;
+    height: auto;
+    max-width: 50%; /* Ensuring the image doesn't exceed the column */
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .product-image {
+        width: 80%;
+        height: auto;
+      max-width: 80%; /* Ensuring the image doesn't exceed the column */
+        border-radius: 8px;
+    }
+    
+}

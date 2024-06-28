@@ -3,6 +3,7 @@ import dol from "../image/dolclassic.jpg";
 import starDelta from "../image/asd.jpg";
 import reverseForward from "../image/reversing.jpg";
 import { Link } from "react-router-dom";
+import "../styles.css"
 
 const Starters = () => {
   return (

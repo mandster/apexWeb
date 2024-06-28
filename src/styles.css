@@ -6,6 +6,8 @@ body {
   width: 100%;
 }
 
+
+
 .logo-text {
   font-size: 24px;
   font-weight: bold;
@@ -208,10 +210,47 @@ nav a {
   font-weight: bold;
 }
 
+
+.thumbnail {
+  max-width: 290px; /* Adjust max height as needed */
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border: 1px solid rgb(192, 191, 191);
+}
+
+.thumbnail2 {
+  border: 1px solid #d0d0d0;
+  width: 100%;
+  max-width: 500px;
+}
+.product-card {
+  flex: 1 0 calc(33.33% - 20px); /* 33.33% width with some margin */
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  color: #333; /* Adjust text color as needed */
+}
+
 .product-row {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2cqi;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  align-items: center;
+  margin: 10px auto;
   justify-content: space-between;
 }
 
@@ -221,9 +260,7 @@ nav a {
     width: 90%; /* Each card takes up 100% of the product row width on smaller screens */
   }
 
-  .main-logo {
-    width: auto;
-  }
+ 
 
   .product-card {
     flex: 1 0 calc(33.33% - 20px); /* 33.33% width with some margin */
@@ -248,8 +285,10 @@ nav a {
 
   .thumbnail2 {
     border: 1px solid #d0d0d0;
-    min-width: 30px;
-    max-width: 300px;
+    width:270px;
+  }
+  .product-container {
+    display:block;
   }
 
   .product-caption {
@@ -306,19 +345,22 @@ nav a {
   justify-content: space-between;
   background-color: #e0e0e0;
   color: #4b4a4a;
-  padding: 20px;
+  padding: 5px;
+  margin-top: 55px;
+  margin-bottom: -16px;
 }
 
 .footer-col {
-  width: 350px;
+  width: 150px;
   text-align: left;
 }
 
 .footer-bed {
+  width: 100%;
   justify-content: space-between;
   background-color: #575656;
   color: #ececec;
-  padding: 2px;
+  padding: 3px;
 }
 
 .logo-container {
@@ -332,6 +374,7 @@ nav a {
 .contact-column,
 .quick-links-column,
 .follow-us-column {
+  margin-left:10px;
   flex: 1; /* Each column takes up 1 part of the available space */
 }
 
@@ -351,8 +394,14 @@ nav a {
 
 .footer-logo {
   margin-left: 20px;
-  width: 20%; /* Adjust the size as needed */
+  width: 40%; /* Adjust the size as needed */
   text-align: center;
+}
+
+.dnv-logo {
+  width: 19%; /* Adjust the size as needed */
+  text-align: left;
+  margin-left: 15px;
 }
 .italics {
   font-style: italic;
@@ -434,7 +483,7 @@ nav a {
 }
 
 header {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05); */
   color: #212529;
   margin-bottom: 4px;
 }
@@ -642,8 +691,8 @@ header h2 {
 }
 
 .product-image {
-  width: 100%;
-  max-width: 100%;
+  width: 30%;
+  max-width: 30%;
   height: auto;
   border-radius: 8px;
 }
