@@ -6,7 +6,7 @@ const ControlSwitches = () => {
   return (
     <>
       <header>
-        <h2 className="centered-text">L.T. Control Switches</h2>
+        <h3 className="centered-text">L.T. Control Switches</h3>
       </header>
 
       {/* <img className="centered" src="your-big-image.jpg" alt="Big Image" /> */}

@@ -7,7 +7,7 @@ const DirectOnlineStarters = () => {
   return (
     <>
       <header>
-        <h2 className="centered-text">Direct Online Starters</h2>
+        <h3 className="centered-text">Direct Online Starters</h3>
       </header>
 
       {/* <img className="centered" src="your-big-image.jpg" alt="Big Image" /> */}

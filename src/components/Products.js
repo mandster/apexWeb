@@ -85,7 +85,7 @@ const Products = () => {
     return rows;
   };
 
-return  <><h2 className="centered-text mt-2"> Our Products </h2>
+return  <><h3 className="centered-text mt-2"> Our Products </h3>
 <div className="h-center centered-text">
 <div className="product-row">{renderColumns()}</div></div></>;
 };

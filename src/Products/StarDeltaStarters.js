@@ -5,7 +5,7 @@ const StarDeltaStarters = () => {
   return (
     <>
       <header>
-        <h2 className="centered-text">Star Delta Motor Starters</h2>
+        <h3 className="centered-text">Star Delta Motor Starters</h3>
       </header>
 
       {/* <img className="centered" src="your-big-image.jpg" alt="Big Image" /> */}

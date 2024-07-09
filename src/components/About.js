@@ -2,7 +2,7 @@
 const About = () => {
   return (
     <>
-      <main className="about-us p-5 pt-2">
+      <main className="about-us ">
         <section className="hero">
           <div className="hero-content">
             <h1>Welcome to Apex Electricals</h1>

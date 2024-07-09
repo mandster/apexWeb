@@ -1,4 +1,4 @@
-import dnvLogo from "../image/dnv_logo.png";
+//import dnvLogo from "../image/dnv_logo.png";
 import { Link } from "react-router-dom";
 import "../styles.css";
 import ContactCard from "./ContactCard";
@@ -30,12 +30,6 @@ const Footer = () => {
         <div className="follow-us-column">
           <h2>Visit us on</h2>
           <SocialIcons />
-          <div className="footer-col xxs-text mt-5">
-
-             <img src={ dnvLogo} alt="Apex ISO 9001" className="dnv-logo"></img>
-            <br></br>
-            ISO 9001, by DNV
-        </div>
 
         </div>
       </div>

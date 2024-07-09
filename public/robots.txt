@@ -1,3 +1,13 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /scripts/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /user/
+
+Allow: /
+
+Sitemap: https://www.apexelectricals.com/sitemap.xml

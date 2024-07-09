@@ -5,6 +5,13 @@
     padding: 10px;
 }
 
+.navbar, .container-fluid {
+    margin: 0;
+    padding: 0;
+    margin-bottom:-25px;
+}
+
+
 .navbar-brand {
     margin-right: auto; /* Push the logo to the left */
 }
@@ -78,6 +85,7 @@
     display: block;
 }
 
+
 .sub-dropdown-content {
     left: 100%;
     top: 0;
@@ -88,6 +96,16 @@
     border-color: rgba(0, 0, 0, 0.1);
     
 }
+/* Navbar.css */
+.navbar-nav .nav-item:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  
+  .dropdown-menu {
+    margin-top: 0;
+  }
+  
 
 
 .nav-item {
@@ -114,13 +132,35 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/* Existing styles ... */
+
+/* Add the new-color class style */
+.new-color {
+    color: blue !important;
+}
+
+/* Ensure the links within the new-color list items are also blue */
+.new-color a {
+    color: blue !important;
+}
+
+/* Ensuring dropdown visibility on hover */
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+
 .navbar {
     box-shadow: none;
+    height: auto;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: rgb(79, 79, 79);
-    color: white;
 
 }
 
@@ -136,7 +176,8 @@
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #f4f4f4;
+    background-color:#132e80 !important;
+    color: white;
 }
 
 .navbar-dark {
@@ -199,9 +240,17 @@
     
 
 @media (max-width: 768px) {
+ 
+
     .dropdown-submenu .dropdown-menu {
         left: -100%;
         top: 0;
         margin-top: -1px;
+    }
+    .main-logo {
+        width: 80%;
+    }
+    #hidden {
+        visibility:hidden;
     }
 }

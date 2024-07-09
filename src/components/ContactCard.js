@@ -9,7 +9,7 @@ const ContactCard = () => {
         <div>Jalandhar - 144004, Punjab, India</div>
       </div>
       <div className="contact-details">
-        <div>Email: sales@apexelectricals.com</div>
+        <div>Email: <a href="mailto:sales@apexelectricals.com">sales@apexelectricals.com </a></div>
         <div>Phone: +91 181 2290463</div>
         <div>Mobile: +91 9988600162</div>
       </div>

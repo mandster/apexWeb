@@ -9,7 +9,7 @@ const OtherProducts = () => {
   return (
     <>
       <header>
-        <h2 className="centered-text tagline">Limit Switches, Plug & Sockets, Push Button Stations, Panel Accessories</h2>
+        <h3 className="centered-text ">Limit Switches, Plug & Sockets, Push Button Stations, Panel Accessories</h3>
       </header>
       <div className="container">
         <div className="row equal-height-row">

@@ -42,7 +42,9 @@ export default function App() {
    
     <BrowserRouter>
     <div className="container"> 
+
     < Navbar />
+ 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Contact" element={<Contact />} />
@@ -54,7 +56,7 @@ export default function App() {
         <Route path="Product/SubmersiblePanels" element={< SubmersiblePanels />} />
         <Route path="/Product/PanelAccessories" element={<OtherProducts />} />
         <Route path="/Product/LimitSwitches" element={<OtherProducts />} />
-        <Route path="/Product/PlugsSockets" element={<OtherProducts />} />
+        <Route path="/Product/PlugSockets" element={<OtherProducts />} />
         <Route path="/Product/Contactors" element={<Contactors />} />
         <Route path="/ProductDetail/:id" element={<ProductDetail />} />
         <Route path="/Product/OtherProducts" element={<OtherProducts />} />

@@ -19,7 +19,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="caro">
+    <div className="caro mt-4">
       <Slider {...settings} >
         <div>
           <img src={slide1} alt="Slide 1" style={{ width: "100%" }} />

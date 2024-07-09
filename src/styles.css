@@ -3,6 +3,7 @@ body {
   font-family: Inter;
 }
 .container {
+  margin-top: 65px;
   width: 100%;
 }
 
@@ -22,8 +23,6 @@ body {
   margin: 0 auto;
 }
 
-#sub-drop {
-}
 
 .Home {
   width: 100%;
@@ -239,21 +238,6 @@ nav a {
   justify-content: space-between;
 }
 
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 2cqi;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 600px;
-  align-items: center;
-  margin: 10px auto;
-  justify-content: space-between;
-}
-
 /* Media query for screens with a maximum width of 768 pixels (adjust as needed) */
 @media (max-width: 768px) {
   .product-row {
@@ -290,7 +274,6 @@ nav a {
   .product-container {
     display:block;
   }
-
   .product-caption {
     display: contents;
     font-weight: bold;
@@ -311,29 +294,11 @@ nav a {
     align-items: center;
     align-content: center;
   }
-  .contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2cqi;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    align-items: center;
-    margin: 10px auto;
-    justify-content: space-between;
-  }
 
-  .contact-column {
-    flex-basis: calc(
-      50% - 20px
-    ); /* Adjust as needed, considering the padding and space between columns */
-    margin: 10px;
-  }
 
-  .address,
-  .contact-details {
+
+  .address
+  {
     margin-top: 15px;
   }
 }
@@ -341,6 +306,7 @@ nav a {
 /* Add this to your CSS file */
 
 .footer {
+  font-size: 15px;
   display: flex;
   justify-content: space-between;
   background-color: #e0e0e0;
@@ -352,15 +318,15 @@ nav a {
 
 .footer-col {
   width: 150px;
-  text-align: left;
 }
 
 .footer-bed {
   width: 100%;
   justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #575656;
   color: #ececec;
-  padding: 3px;
+  padding: 4px;
 }
 
 .logo-container {
@@ -371,10 +337,9 @@ nav a {
   align-self: right;
 }
 
-.contact-column,
 .quick-links-column,
 .follow-us-column {
-  margin-left:10px;
+  margin-left:140px;
   flex: 1; /* Each column takes up 1 part of the available space */
 }
 
@@ -548,10 +513,8 @@ button span {
   background-color: #eeeded;
 }
 
-header h2 {
-  font-family: Salmaal;
+header h3 {
   background-color: #eeeded;
-  font-weight: bold;
 }
 
 .arrow::after {
@@ -722,29 +685,29 @@ header h2 {
 }
 
 @media (max-width: 768px) {
-  .variant-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 5px;
-  }
-  .float-child {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .variant {
-    width: 100%;
-    margin-bottom: 5px;
-    padding: 3px;
-    box-sizing: border-box;
-    text-align: left;
-  }
-
-  .variant img {
-    max-width: 100%;
-    height: auto;
-  }
+    .variant-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .product-description {
+      width: 100%;
+      order: 2;
+      text-align: justify;
+    }
+  
+    .float-child2 {
+      width: 100%;
+      order: 1;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .product-image {
+      width: 100%;
+      max-width: 100%;
+    }
+  
   .navbar {
     flex-direction: column;
   }
@@ -769,7 +732,11 @@ header h2 {
     flex-direction: column;
     background-color: #333;
   }
-
+  header h3 {
+    background-color: #eeeded;
+    color: #212529;
+    padding-bottom: 4px;
+  }
   .nav-item {
     text-align: center;
     margin: 0;
@@ -797,4 +764,8 @@ header h2 {
     max-width: 100%;
     height: auto;
   }
+  
+header h2 {
+  background-color: #132e80;
+}
 }
